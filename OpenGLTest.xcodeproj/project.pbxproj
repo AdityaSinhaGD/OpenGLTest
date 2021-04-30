@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		616EE78F25BCE334003974B7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616EE78E25BCE334003974B7 /* main.cpp */; };
+		616EE79825BCE363003974B7 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616EE79725BCE363003974B7 /* OpenGL.framework */; };
+		616EE79A25BCE405003974B7 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 616EE79925BCE405003974B7 /* libglfw.3.3.dylib */; };
+		616EE79C25BCE434003974B7 /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 616EE79B25BCE434003974B7 /* libGLEW.2.2.0.dylib */; };
+		6188832E263928320051CA6E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6188832D263928320051CA6E /* main.cpp */; };
+		6188833C263929090051CA6E /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6188833A263929090051CA6E /* Camera.cpp */; };
+		61B145D925C0C16A00A430E7 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B145D825C0C16A00A430E7 /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +29,21 @@
 
 /* Begin PBXFileReference section */
 		616EE78B25BCE334003974B7 /* OpenGLTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGLTest; sourceTree = BUILT_PRODUCTS_DIR; };
-		616EE78E25BCE334003974B7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		616EE79725BCE363003974B7 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		616EE79925BCE405003974B7 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../usr/local/Cellar/glfw/3.3.2/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		616EE79B25BCE434003974B7 /* libGLEW.2.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.2.0.dylib; path = ../../../../../usr/local/Cellar/glew/2.2.0_1/lib/libGLEW.2.2.0.dylib; sourceTree = "<group>"; };
+		616EE7A025BCE613003974B7 /* OpenGLTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenGLTest.entitlements; sourceTree = "<group>"; };
+		6188832D263928320051CA6E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		61888336263929090051CA6E /* Sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sphere.h; sourceTree = "<group>"; };
+		61888337263929090051CA6E /* Text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Text.h; sourceTree = "<group>"; };
+		61888338263929090051CA6E /* Box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box.h; sourceTree = "<group>"; };
+		61888339263929090051CA6E /* Light.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Light.h; sourceTree = "<group>"; };
+		6188833A263929090051CA6E /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		6188833B263929090051CA6E /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		6188833E263929800051CA6E /* geoData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = geoData; sourceTree = "<group>"; };
+		61B145D825C0C16A00A430E7 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		61BD2B83263A728C00ACBFCA /* geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = geometry.h; sourceTree = "<group>"; };
+		61BD2B85263B792000ACBFCA /* Ray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ray.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +51,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				616EE79C25BCE434003974B7 /* libGLEW.2.2.0.dylib in Frameworks */,
+				616EE79A25BCE405003974B7 /* libglfw.3.3.dylib in Frameworks */,
+				61B145D925C0C16A00A430E7 /* GLUT.framework in Frameworks */,
+				616EE79825BCE363003974B7 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +66,7 @@
 			children = (
 				616EE78D25BCE334003974B7 /* OpenGLTest */,
 				616EE78C25BCE334003974B7 /* Products */,
+				616EE79625BCE363003974B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +81,38 @@
 		616EE78D25BCE334003974B7 /* OpenGLTest */ = {
 			isa = PBXGroup;
 			children = (
-				616EE78E25BCE334003974B7 /* main.cpp */,
+				6188833E263929800051CA6E /* geoData */,
+				6188832C263928180051CA6E /* src */,
+				616EE7A025BCE613003974B7 /* OpenGLTest.entitlements */,
 			);
 			path = OpenGLTest;
+			sourceTree = "<group>";
+		};
+		616EE79625BCE363003974B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61B145D825C0C16A00A430E7 /* GLUT.framework */,
+				616EE79B25BCE434003974B7 /* libGLEW.2.2.0.dylib */,
+				616EE79925BCE405003974B7 /* libglfw.3.3.dylib */,
+				616EE79725BCE363003974B7 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6188832C263928180051CA6E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				61888338263929090051CA6E /* Box.h */,
+				6188833A263929090051CA6E /* Camera.cpp */,
+				6188833B263929090051CA6E /* Camera.h */,
+				61888339263929090051CA6E /* Light.h */,
+				61888336263929090051CA6E /* Sphere.h */,
+				61888337263929090051CA6E /* Text.h */,
+				6188832D263928320051CA6E /* main.cpp */,
+				61BD2B83263A728C00ACBFCA /* geometry.h */,
+				61BD2B85263B792000ACBFCA /* Ray.h */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +171,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				616EE78F25BCE334003974B7 /* main.cpp in Sources */,
+				6188833C263929090051CA6E /* Camera.cpp in Sources */,
+				6188832E263928320051CA6E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +230,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -229,6 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -239,9 +295,21 @@
 		616EE79325BCE334003974B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OpenGLTest/OpenGLTest.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5933QDWBTM;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.3.2/lib,
+					/usr/local/Cellar/glew/2.2.0_1/lib,
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.3.2/lib,
+					/usr/local/Cellar/glm/0.9.9.8/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -249,9 +317,20 @@
 		616EE79425BCE334003974B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OpenGLTest/OpenGLTest.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5933QDWBTM;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.3.2/lib,
+					/usr/local/Cellar/glew/2.2.0_1/lib,
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					/usr/local/Cellar/glfw/3.3.2/lib,
+					/usr/local/Cellar/glm/0.9.9.8/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
